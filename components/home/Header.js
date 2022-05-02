@@ -14,10 +14,10 @@ export default function Header() {
                         style={styles.icon} />
                 </TouchableOpacity>
 
-                <TouchableOpacity>
+                {/* <TouchableOpacity>
                     <Image source={{ uri: 'https://img.icons8.com/fluency-systems-regular/60/ffffff/like--v1.png' }}
                         style={styles.icon} />
-                </TouchableOpacity>
+                </TouchableOpacity> */}
 
                 <TouchableOpacity>
                     <View style={styles.unreadBadge}>
