@@ -4,12 +4,12 @@ import LoginForm from '../components/loginScreen/LoginForm'
 
 const INSTAGRAM_LOGO='https://img.icons8.com/fluency/100/000000/instagram-new.png'
 
-const LoginScreen = () => (
+const LoginScreen = ({navigation}) => (
     <View style={styles.container}>
      <View style={styles.logoContainer}>
          <Image source={{uri:INSTAGRAM_LOGO, height:100, width:100 }} />
      </View>
-     <LoginForm />
+     <LoginForm navigation={navigation} />
     </View>
   )
 
