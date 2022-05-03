@@ -6,10 +6,10 @@ import Post from '../components/Post'
 import { POSTS } from '../data/Posts'
 import BottoTab, { bottomTabIcons } from '../components/home/BottoTab'
 
-export default function HomeScreen() {
+export default function HomeScreen({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
-      <Header />
+      <Header navigation={navigation} />
       <Stories />
       <ScrollView>
         {POSTS.map((post, index) => (
